@@ -37,7 +37,7 @@ class Url
         if($sandbox == true){
             return self::HTTPS.self::SANDBOX.self::PAYU.self::ORDERS;
         }
-        return self::HTTPS.self::PAYU.self::CREATE_ORDER;
+        return self::HTTPS.self::PAYU.self::ORDERS;
     }
 
     /**
