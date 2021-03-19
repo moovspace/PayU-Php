@@ -18,16 +18,6 @@ Włącz auto odbiór w panelu klienta PayU
         "moovspace/payu": "v4.0"
 }
 ```
-### Or 
-```json
-,
-"repositories": [
-	{
-		"type": "vcs",
-		"url": "https://github.com/moovspace/payu"
-	}
-],
-```
 
 ### Update class with composer
 ```bash
@@ -165,3 +155,13 @@ composer dump-autoload -o
 
 ## Błędy z potwierdzeń (notyfikacji z PayU)
 Zobacz w lista transakcji > Szczegóły pojedyńczej transakcji > Pokaż raporty (Zielony przycisk)
+
+### Import from git 
+```json
+"repositories": [
+	{
+		"type": "vcs",
+		"url": "https://github.com/moovspace/payu"
+	}
+],
+```
