@@ -4,7 +4,7 @@ Jak dodać płatności PayU do swojej strony internetowej. PayU php REST API.
 - Powiadomienia z PayU zapisywane w bazie danych
 - Zwroty zapisywane w bazie danych
 
-**Po zmianie danych w config.php i imporcie bazy danych i usera wszystko powinno działać na sandboxie.**
+**Po zmianie danych w config.php i imporcie bazy danych i usera mysql wszystko powinno działać (production, sandbox).**
 
 ## Konto sandbox do testów
 https://registration-merch-prod.snd.payu.com/boarding/#/registerSandbox/
