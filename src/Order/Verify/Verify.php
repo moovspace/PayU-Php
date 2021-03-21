@@ -85,14 +85,14 @@ class Verify
             unset($message['status']);
         }
 
-		$result = self::build($data);
+	$result = self::build($data);
 
         if ($httpStatus == 200 || $httpStatus == 201 || $httpStatus == 422 || $httpStatus == 301 || $httpStatus == 302) {
             return json_decode(json_encode($result));
         }
 
         // Clear cache if error
-        Credentials::ClearCacheToken();
+        // Credentials::ClearCacheToken();
 
         // Error token response status:UNAUTHORIZED
         throw new Exception(ResponseError::Get($httpStatus, $data), 9999);
