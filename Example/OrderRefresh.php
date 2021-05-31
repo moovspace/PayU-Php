@@ -24,7 +24,7 @@ try
 	// Pobierz token
 	$token = $auth->Token(Config::PAYU_POS_ID, Config::PAYU_CLIENT_SECRET, Config::SANDBOX);
 
-	// Utwórz link do płatności
+	// Statuz zamówienia
 	$obj = Order::Status($orderId, $token, Config::SANDBOX);
 
 	// Pobierz status
